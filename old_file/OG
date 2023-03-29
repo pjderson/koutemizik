@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMEDIA | Accueil</title>
+
+    <meta name="author" content="Codeconvey" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- Toggle Menu CSS -->
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Start Header -->
+        <div class="container header">
+
+            <div class="container row d-flex justify-content-center align-items-center">
+                <div class="logo col-md-2  text-start p-0">
+                    <img src="./assets/images/xmedia.png" width="125" alt="">
+                </div>
+
+                <div class="search_bar col-md-8">
+                    <form class="search">
+                        <input type="search" class="form-control shadow-none  border-0"
+                            placeholder="Chercher une musique, un artiste ou un playliste" aria-label="Search">
+                    </form>
+                </div>
+                <div class="login_box col-md-2 text-end p-0">
+                    <span>Login <i class="fas fa-user"></i> </span>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- End Header -->
+        <!-- Start Sidebar Menu -->
+        <div class="container sidebar">
+
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner">
+                    <li> <a href="#1"> <i class="fas fa-house"></i> Home</a></li>
+                    <li><a href="#2"><i class="fa-solid fa-compact-disc"></i> Albums</a></li>
+                    <li><a href="#5"><i class="fa-solid fa-border-all" style="margin-left:2px ;"></i>
+                        <li><a href="#1"><i class="fa-solid fa-music"></i> Artistes</a></li>
+                            Categories</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- End Sidebar Menu -->
+
+        <!-- Page content slider-->
+        <div class="container content">
+            <!-- Start Slider -->
+            <div id="slider">
+                <figure>
+                    <div class="box_img">
+                        <p class="head_title">New</p>
+                        <img src="./assets/images/1.jpg" alt="album_wendyy">
+                        <p class="title_album">Album - Wendyyy King</p>
+                    </div>
+                    <div class="box_img">
+                        <p class="head_title">New</p>
+                        <img src="./assets/images/2.jpg" alt="album _baky">
+                        <p class="title_album">Album - Baky Popile</p>
+                    </div>
+                    <div class="box_img">
+                        <p class="head_title">New</p>
+                        <img src="./assets/images/1.jpg" alt="album_wendyy">
+                        <p class="title_album">Album - Wendyyy King</p>
+                    </div>
+                    <div class="box_img">
+                        <p class="head_title">New</p>
+                        <img src="./assets/images/3.jpg" alt="album_roody_roodboy">
+                        <p class="title_album">Album - Roody Roodboy</p>
+                    </div>
+                    <div class="box_img">
+                        <p class="head_title">New</p>
+                        <img src="./assets/images/1.jpg" alt="album_wendyy">
+                        <p class="title_album">Album - Wendyyy King</p>
+                    </div>
+                </figure>
+            </div>
+            <!-- End Slider -->
+        </div>
+        <!-- Stat Page content slider -->
+
+        <!-- Start content musics -->
+        <div class="container my-3">
+            <div class="content-releases_view  row d-flex justify-content-center align-items-center">
+                <div class="new_release col-md-6 text-start">
+                    <h2>New Releases <span>New</span></h2>
+                    <p>For All Categories Musics</p>
+                </div>
+                <div class="view_all col-md-6 text-end">
+                    <p><a href="#">View All &nbsp; <i class="fas fa-angle-right"></i></a></p>
+                </div>
+            </div>
+            <!-- First content Musics -->
+            <div class="first_content_musics row">
+                <!-- First  -->
+                <div class="col-md-2 first box_music">
+                    <img src="./assets/images/10.jpg" alt="">
+                    <h4>Song Name</h4>
+                    <p>Artiste</p>
+                </div>
+                <!-- End first -->
+                <!-- second  -->
+                <div class="col-md-2 second box_music">
+                    <img src="./assets/images/11.jpg" alt="">
+                    <h4>Song Name</h4>
+                    <p>Artiste</p>
+                </div>
+                <!-- End second -->
+                <!-- three  -->
+                <div class="col-md-2 three box_music">
+                    <img src="./assets/images/36.jpg" alt="">
+                    <h4>Song Name</h4>
+                    <p>Artiste</p>
+                </div>
+                <!-- End three -->
+                <!-- four  -->
+                <div class="col-md-2 four box_music">
+                    <img src="./assets/images/23.jpg" alt="">
+                    <h4>Song Name</h4>
+                    <p>Artiste</p>
+                </div>
+                <!-- End four -->
+                <!-- five  -->
+                <div class="col-md-2 four box_music">
+                    <img src="./assets/images/42.jpg" alt="">
+                    <h4>Song Name</h4>
+                    <p>Artiste</p>
+                </div>
+                <!-- End five -->
+                <!-- six  -->
+                <div class="col-md-2 four box_music">
+                    <img src="./assets/images/68.jpg" alt="">
+                    <h4>Song Name</h4>
+                    <p>Artiste</p>
+                </div>
+                <!-- End six -->
+
+            </div>
+
+            <!-- End first content  music -->
+
+            <!-- Second content Musics -->
+            <div class="content-releases_view  row d-flex justify-content-center align-items-center">
+                <div class="new_release col-md-6 text-start">
+                    <h2>Musics <span>Rap</span></h2>
+                    <p>Enjoy some awesome musics Hip-Hop/Rap</p>
+                </div>
+                <div class="view_all col-md-6 text-end">
+                    <p><a href="#">View All &nbsp; <i class="fas fa-angle-right"></i></a></p>
+                </div>
+            </div>
+            <div class="second_content_musics row">
+                <!-- First  -->
+                <div class="col-md-2 first box_music">
+                    <img src="./assets/images/10.jpg" alt="">
+                    <h4>Song Name</h4>
+                    <p>Artiste</p>
+                </div>
+                <!-- End first -->
+                <!-- second  -->
+                <div class="col-md-2 second box_music">
+                    <img src="./assets/images/11.jpg" alt="">
+                    <h4>Song Name</h4>
+                    <p>Artiste</p>
+                </div>
+                <!-- End second -->
+                <!-- three  -->
+                <div class="col-md-2 three box_music">
+                    <img src="./assets/images/36.jpg" alt="">
+                    <h4>Song Name</h4>
+                    <p>Artiste</p>
+                </div>
+                <!-- End three -->
+                <!-- four  -->
+                <div class="col-md-2 four box_music">
+                    <img src="./assets/images/23.jpg" alt="">
+                    <h4>Song Name</h4>
+                    <p>Artiste</p>
+                </div>
+                <!-- End four -->
+                <!-- five  -->
+                <div class="col-md-2 four box_music">
+                    <img src="./assets/images/42.jpg" alt="">
+                    <h4>Song Name</h4>
+                    <p>Artiste</p>
+                </div>
+                <!-- End five -->
+                <!-- six  -->
+                <div class="col-md-2 four box_music">
+                    <img src="./assets/images/68.jpg" alt="">
+                    <h4>Song Name</h4>
+                    <p>Artiste</p>
+                </div>
+                <!-- End six -->
+
+            </div>
+
+            <!-- End second content  music -->
+        </div>
+        <!-- End Content musics -->
+        <!-- View all categories -->
+        <div class="container">
+            <div class="content-btn my-5 p-0">
+                <a href="#" class="view py-2 px-2"> View All Categories <i class="fas fa-angle-right"></i> </a>
+            </div>
+        </div>
+        <!-- En views all categories -->
+        <!-- start footer -->
+        <div class="container">
+            <hr class="border border-warning">
+            <div class="footer-section text-center text-white">
+
+                <!-- Facebook -->
+                <a href="#!" class="fab-btn"><i class="fab fa-facebook-f"></i></a>
+                <style>
+
+                </style>
+                <!-- Twitter -->
+                <a href="#!" class="fab-btn"><i class="fab fa-twitter"></i></a>
+
+                <!-- Instagram -->
+                <a href="#!" class="fab-btn"><i class="fab fa-instagram"></i></a>
+                <!-- Copyright -->
+
+                <div class="text-center p-3">
+                    © 2022 Copyright:
+                    <a class="text-white" href="#"> xmedia-ayiti.com</a> , &nbsp;
+                    pour plus info contacter nous par email : <a
+                        href="mailto:xmediaayiti@gmail.com">xmediaayiti@gmail.com</a>
+                </div>
+                <!-- Copyright -->
+            </div>
+            <!-- End footer -->
+
+        </div>
+
+        <style>
+            .master_play {
+                /* left: 0; */
+                position: fixed;
+                bottom: 0;
+
+                /* right: 0; */
+                /* width: 100%; */
+            }
+        </style>
+
+    </div>
+    <!-- Start master play -->
+    <div class="container-fluid master_play">
+        <!-- <div class="master_play_section   ">
+        ffffff
+    </div> -->
+
+        <p>ghsbgfafuj</p>
+    </div>
+
+    <!-- End master play -->
+
+
+
+
+</body>
+
+</html>

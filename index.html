@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMEDIA | Accueil</title>
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/icon-font.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/plyr.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/swiper-bundle.min.css" />
+
+    <!-- Link script js -->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/plyr.min.js"></script>
+    <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+    <!-- End link script js -->
+
+
+
+</head>
+
+<body>
+    <!-- preloader -->
+    <div id="preloader" class="preloader">
+        <div class="load">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="spinner-border spinner-animation-speed spinner-width-sm" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <!-- Fonction du preloader -->
+    <script>
+        let preloader = document.getElementById('preloader');
+
+        window.addEventListener('load', () => {
+            preloader.style.display = 'none';
+        })
+    </script>
+    <!-- End preloader -->
+    <div class="container-fluid  p-0 m-0" id="content">
+        <!-- start header -->
+        <div class="header align-items-center">
+            <div class="row  px-4 d-flex justify-content-center align-items-center">
+                <div class="logo col-md-2   p-0">
+                    <a href="index.html"><img src="./assets/images/logo.png" width="150" alt=""></a>
+                </div>
+
+                <div class="search_bar col-md-8 " id="search_bar">
+                    <form class="search">
+                        <input type="search" class="form-control shadow-none"
+                            placeholder="Chercher votre musique pr&eacute;f&eacute;r&eacute;e !" aria-label="Search">
+                    </form>
+                </div>
+                <div class="login_box col-md-2  text-end p-0 " id="login_box">
+                    <span>Login <i class="bi bi-person-circle"></i> </span>
+                </div>
+                <div class="i fas fa-search text-white fs-5" id="fa-search" onclick="display()"></div>
+                <div class="i fas fa-times text-end text-white fs-4 d-none" id="fa-times" onclick="hide()"></div>
+            </div>
+        </div>
+        <!-- toggle search bar -->
+        <script>
+            function display() {
+                document.getElementById('search_bar').style.display = 'block';
+                document.getElementById('fa-search').style.visibility = 'hidden';
+                $('#fa-times').removeClass('d-none');
+                document.getElementById('fa-search').style.marginTop = '-125px';
+                document.getElementById('fa-times').style.marginTop = '-123px';
+            }
+
+            function hide() {
+                document.getElementById('search_bar').style.display = 'none';
+                document.getElementById('fa-search').style.visibility = 'visible';
+                $('#fa-times').addClass('d-none');
+                document.getElementById('fa-times').style.marginTop = '-50.5px';
+                document.getElementById('fa-search').style.marginTop = '-50.5px';
+            }
+        </script>
+        <!-- end header -->
+        <!-- --------------------------------------------- -->
+        <!-- start sidebar -->
+        <div class="sidebar" id="sidebar" onclick="closeToggle()">
+            <div class="main_sidebar">
+                <!-- <p><i class="lnr lnr-menu"></i></p> -->
+                <a href="#" class="active"><i class="lnr lnr-home"></i>Home</a>
+                <a href="#"><i class="lnr lnr-music-note"></i> Artistes</a>
+                <a href="#"><i class="lnr lnr-layers"></i>Albums</a>
+                <a href="#"><i class="lnr lnr-film-play"></i>Videos</a>
+                <a href="#"><i class="lnr lnr-list"></i>Categories</a>
+            </div>
+        </div>
+        <!-- end sidebar -->
+        <!-- --------------------------------------------- -->
+        <!-- start content -->
+        <div class="content container">
+            <i class="fa fs-1 px-1  py-1  position-fixed d-none text-warning " id="close-toggle-sidebar"
+                onclick="closeToggle()"></i>
+            <script>
+                function toggle() {
+
+                    document.getElementById('sidebar').style.width = '150px';
+                    $('#close-toggle-sidebar').addClass('fa-times');
+                    $('#close-toggle-sidebar').removeClass('d-none');
+
+
+                }
+                function closeToggle() {
+                    document.getElementById('sidebar').style.width = '0px';
+                    $('#close-toggle-sidebar').addClass('d-none');
+
+                }
+            </script>
+            <!-- End toggle sidebar -->
+
+            <div class="container" id="slider-wrapper">
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="bg-text">
+                                    <h2>Content</h2>
+                                </div>
+                                <img src="./assets/images/10.jpg" />
+                            </a>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="bg-text">
+                                    <h2>Content</h2>
+                                </div>
+                                <img src="./assets/images/10.jpg" />
+                            </a>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="bg-text">
+                                    <h2>Content</h2>
+                                </div>
+                                <img src="./assets/images/10.jpg" />
+                            </a>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="bg-text">
+                                    <h2>Content</h2>
+                                </div>
+                                <img src="./assets/images/10.jpg" />
+                            </a>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="bg-text">
+                                    <h2>Content</h2>
+                                </div>
+                                <img src="./assets/images/10.jpg" />
+                            </a>
+                            <div class="shadow"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- ########### -->
+                <!-- Swiper JS -->
+                <script src="./assets/js/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        effect: "coverflow",
+                        loop: true,
+                        spaceBetween: 0,
+                        grabCursor: true,
+                        centeredSlides: true,
+                        slidesPerView: "auto",
+                        coverflowEffect: {
+                            rotate: 20,
+                            stretch: 0,
+                            depth: 50,
+                            modifier: 1,
+                            slideShadows: true,
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        }
+                    });
+                </script>
+            </div>
+            <!-- End Slider -->
+            <!-- ---------------------------------------- -->
+
+            <div class="container my-3">
+                <div class="content-releases_view   d-flex justify-content-between align-items-center">
+                    <span class="fs-4"> <i class="bi bi-music-note"></i>New Releases</span>
+                    <a href="#">Show All<i class="lnr lnr-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- First content Musics -->
+            <div class="first_content_musics carousel2 owl-carousel container">
+                <!-- First  -->
+                <div class="first box_music">
+                    <a href="music_play.html">
+                        <div class="img_play">
+                            <img class="img-responsive" src="./assets/images/10.jpg" alt="">
+                            <div class="overlay">
+                                <i class="bi bi-play-circle-fill" id="1"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="desc_play">
+                        <h4>Song Name</h4>
+                        <p>Artiste</p>
+                    </div>
+
+                </div>
+
+                <!-- End first -->
+                <!-- second  -->
+                <div class=" second box_music">
+                    <div class="img_play">
+                        <img class="img-responsive" src="./assets/images/11.jpg" alt="">
+                        <div class="overlay">
+                            <i class="bi bi-play-circle-fill" id="2"></i>
+                        </div>
+                    </div>
+                    <div class="desc_play">
+                        <h4>Song Name</h4>
+                        <p>Artiste</p>
+                    </div>
+                </div>
+                <!-- End second -->
+                <!-- three  -->
+                <div class=" three box_music">
+                    <div class="img_play">
+                        <img class="img-responsive" src="./assets/images/36.jpg" alt="">
+                        <div class="overlay">
+                            <i class="bi bi-play-circle-fill" id="3"></i>
+                        </div>
+                    </div>
+                    <div class="desc_play">
+                        <h4>Song Name</h4>
+                        <p>Artiste</p>
+                    </div>
+                </div>
+                <!-- End three -->
+                <!-- four  -->
+                <div class=" four box_music">
+                    <div class="img_play">
+                        <img class="img-responsive" src="./assets/images/23.jpg" alt="">
+                        <div class="overlay">
+                            <i class="bi bi-play-circle-fill" id="4"></i>
+                        </div>
+                    </div>
+                    <div class="desc_play">
+                        <h4>Song Name</h4>
+                        <p>Artiste</p>
+                    </div>
+                </div>
+                <!-- End four -->
+                <!-- five  -->
+                <div class=" four box_music">
+                    <div class="img_play">
+                        <img class="img-responsive" src="./assets/images/42.jpg" alt="">
+                        <div class="overlay">
+                            <i class="bi bi-play-circle-fill" id="5"></i>
+                        </div>
+                    </div>
+                    <div class="desc_play">
+                        <h4>Song Name</h4>
+                        <p>Artiste</p>
+                    </div>
+                </div>
+                <!-- End five -->
+                <!-- six  -->
+                <div class=" four box_music">
+                    <div class="img_play">
+                        <img class="img-responsive" src="./assets/images/68.jpg" alt="">
+                        <div class="overlay">
+                            <i class="bi bi-play-circle-fill" id="6"></i>
+                        </div>
+                    </div>
+                    <div class="desc_play">
+                        <h4>Song Name</h4>
+                        <p>Artiste</p>
+                    </div>
+                </div>
+                <!-- End six -->
+            </div>
+
+            <!-- End first content  music -->
+            <!-- separator -->
+            <hr style="color: #ec8911;">
+            <!-- End separator -->
+
+            <div class="container my-3">
+                <div class="content-releases_view   d-flex justify-content-between align-items-center">
+                    <span class="fs-4"> <i class="bi bi-headphones"></i>Hits Hip-Hop</span>
+                    <a href="#">Show All<i class="lnr lnr-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- second content Musics -->
+            <div class="second_content_musics carousel2 owl-carousel container">
+                <!-- First  -->
+                <div class="first box_music">
+                    <div class="img_play">
+                        <img class="img-responsive" src="./assets/images/10.jpg" alt="">
+                        <div class="overlay">
+                            <i class="bi bi-play-circle-fill" id="1"></i>
+                        </div>
+                    </div>
+                    <div class="desc_play">
+                        <h4>Song Name</h4>
+                        <p>Artiste</p>
+                    </div>
+                </div>
+
+                <!-- End first -->
+                <!-- second  -->
+                <div class=" second box_music">
+                    <div class="img_play">
+                        <img class="img-responsive" src="./assets/images/11.jpg" alt="">
+                        <div class="overlay">
+                            <i class="bi bi-play-circle-fill" id="2"></i>
+                        </div>
+                    </div>
+                    <div class="desc_play">
+                        <h4>Song Name</h4>
+                        <p>Artiste</p>
+                    </div>
+                </div>
+                <!-- End second -->
+                <!-- three  -->
+                <div class=" three box_music">
+                    <div class="img_play">
+                        <img class="img-responsive" src="./assets/images/36.jpg" alt="">
+                        <div class="overlay">
+                            <i class="bi bi-play-circle-fill" id="3"></i>
+                        </div>
+                    </div>
+                    <div class="desc_play">
+                        <h4>Song Name</h4>
+                        <p>Artiste</p>
+                    </div>
+                </div>
+                <!-- End three -->
+                <!-- four  -->
+                <div class=" four box_music">
+                    <div class="img_play">
+                        <img class="img-responsive" src="./assets/images/23.jpg" alt="">
+                        <div class="overlay">
+                            <i class="bi bi-play-circle-fill" id="4"></i>
+                        </div>
+                    </div>
+                    <div class="desc_play">
+                        <h4>Song Name</h4>
+                        <p>Artiste</p>
+                    </div>
+                </div>
+                <!-- End four -->
+                <!-- five  -->
+                <div class=" four box_music">
+                    <div class="img_play">
+                        <img class="img-responsive" src="./assets/images/42.jpg" alt="">
+                        <div class="overlay">
+                            <i class="bi bi-play-circle-fill" id="5"></i>
+                        </div>
+                    </div>
+                    <div class="desc_play">
+                        <h4>Song Name</h4>
+                        <p>Artiste</p>
+                    </div>
+                </div>
+                <!-- End five -->
+                <!-- six  -->
+                <div class=" four box_music">
+                    <div class="img_play">
+                        <img class="img-responsive" src="./assets/images/68.jpg" alt="">
+                        <div class="overlay">
+                            <i class="bi bi-play-circle-fill" id="6"></i>
+                        </div>
+                    </div>
+                    <div class="desc_play">
+                        <h4>Song Name</h4>
+                        <p>Artiste</p>
+                    </div>
+                </div>
+                <!-- End six -->
+            </div>
+            <!-- End second content music -->
+            <script>
+                $(document).ready(function () {
+                    $(".carousel2").owlCarousel({
+
+                        margin: 20,
+                        loop: true,
+                        autoplay: true,
+                        autoplayTimeout: 10000,
+                        autoplayHoverPause: true,
+                        responsiveClass: true,
+                        dots: false,
+                        center: true,
+                        nav: true,
+                        navText: [
+                            "<span class='fas fa-angle-left'></span>",
+                            "<span class='fas fa-angle-right'></span>"
+                        ],
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: true
+                            },
+                            200: {
+                                items: 2,
+                                nav: true
+                            },
+
+
+                            400: {
+                                items: 3,
+                                nav: true
+                            },
+                            600: {
+                                items: 4,
+                                nav: true
+                            },
+                            800: {
+                                items: 5,
+                                nav: true
+                            },
+
+                            1000: {
+                                items: 6,
+                                nav: true
+                            }
+                        }
+                    });
+                });
+            </script>
+            <div class="text-center text-white footer">
+                <!-- Grid container -->
+                <div class="container">
+                    <hr style="color: #ec8911;">
+                    <!-- Section: Social media -->
+                    <section class="">
+                        <!-- Facebook -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!"><i
+                                class="fab fa-facebook-f text-white"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!"><i
+                                class="fab fa-instagram text-white"></i></a>
+
+                        <!-- Whatsapp -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!"><i
+                                class="fab fa-whatsapp text-white"></i></a>
+                    </section>
+                    <!-- Section: Social media -->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center pb-2">
+                    © 2022 X-media, Tous droits réservés.
+                </div>
+                <!-- Copyright -->
+            </div>
+        </div>
+        <!-- footer 1 -->
+        <div id="footer1" class="footer1 bg-dark">
+            <div class="fas fa-bars " id="toggle-sidebar" onclick="toggle()"></div>
+            <!-- <p> © 2022 Xmedia</p> -->
+        </div>
+
+        <!-- End Content musics -->
+        <!--  -->
+        <!-- ----------------- -->
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+        <!-- end content -->
+
+
+
+    </div>
+
+
+</body>
+
+</html>

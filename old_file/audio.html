@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="all" href="./assets/fontawesome/css/audio.css">
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="col-md-8 player">
+        <div class="audio-player">
+            <audio id="audio-player" controls="controls">
+                <source src="./18325764.mp3" type="audio/mp3">
+                </source>
+            </audio>
+        </div>
+    </div>
+    <script src="./assets/js/mediaelement-and-player.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#audio-player').mediaelementplayer({
+                alwaysShowControls: true,
+                features: ['playpause', 'progress', 'volume'],
+                audioVolume: 'horizontal',
+                iPadUseNativeControls: true,
+                iPhoneUseNativeControls: true,
+                AndroidUseNativeControls: true
+            });
+        });
+    </script>
+    <!--audio-->
+
+    <!---->
+
+</body>
+
+</html>

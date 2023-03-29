@@ -1,0 +1,328 @@
+/* @import url('https://fonts.googleapis.com/css?family=Varela+Round'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000d20;
+}
+.header {
+  background-color: #000d20;
+  position: fixed;
+  height: 60px !important;
+  box-shadow: 2px 2px 4px #06101c;
+  z-index: 10000;
+  width: 100% !important;
+  top: 0;
+}
+
+/* Search bar */
+.header form input {
+  border-radius: 50px;
+  background: #05152e;
+  color: #d0d3d8;
+}
+
+.header form input:focus {
+  background: #05152e;
+  color: #d0d3d8;
+}
+
+/* end */
+
+/* Login box */
+.header .login_box {
+  color: #d0d3d8;
+}
+.header .login_box span:hover {
+  color: #ec8911;
+  cursor: pointer;
+}
+
+/* End */
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  /* user-select: none; */
+  left: 0;
+  width: 50px;
+  /* margin-top: 80px; */
+  /* background: red; */
+}
+#sidebarMenu {
+  height: 100vh;
+  /* position: fixed; */
+  /* user-select: none; */
+  left: 0;
+  width: 50px;
+  margin-top: 80px;
+  transition: all 0.5s ease-in-out;
+  background: #06101c;
+  background: red;
+  border-top-right-radius: 50px;
+  z-index: 10000;
+  box-shadow: 1px 1px 4px #d0d3d8;
+}
+.sidebarMenuInner {
+  margin: 0;
+  padding: 0;
+}
+.sidebarMenuInner li {
+  list-style: none;
+  color: #ec8911;
+  padding: 20px 15px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.sidebarMenuInner li a {
+  color: #d0d3d8;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: flex;
+  /* visibility: hidden; */
+}
+.sidebarMenuInner li a .fas,
+.sidebarMenuInner li a .fa-solid {
+  margin-right: 17px;
+  font-size: 18px;
+  margin-top: 3px;
+}
+.sidebarMenuInner li a .fas,
+.sidebarMenuInner li a .fa-solid:hover {
+  color: #ec8911;
+}
+.sidebarMenuInner li a:hover {
+  color: #ec8911;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  width: 180px;
+  transition: all 0.5s ease-in-out;
+}
+
+input[type="checkbox"] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 22px;
+  left: 15px;
+  height: 22px;
+  width: 22px;
+}
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #d0d3d8;
+}
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+
+.content {
+  padding-top: 70px;
+}
+
+/* start slider */
+#slider {
+  overflow: hidden;
+  box-shadow: 2px 2px 20px #06101c;
+  border-radius: 12px;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure .box_img {
+  width: 20%;
+  float: left;
+  height: 350px;
+  position: relative;
+}
+#slider figure .box_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+#slider figure .box_img .head_title {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  color: #fff;
+  z-index: 1000;
+  background: #ec8911;
+  padding: 10px 20px;
+  border-radius: 2px;
+  font-weight: 800;
+}
+#slider figure .box_img .title_album {
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  color: #fff;
+  z-index: 1000;
+  font-weight: 800;
+  font-size: 25px;
+}
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+/* End slider */
+
+/* Start Content musics */
+
+.content-releases_view .new_release h2 {
+  color: #c9d1de;
+}
+.content-releases_view .new_release h2 span {
+  color: #fff;
+  background-color: #ec8911;
+  padding: 3px 15px;
+  font-size: 25px;
+  border-radius: 2px;
+}
+
+.content-releases_view .new_release p {
+  color: #c9d1de;
+}
+.content-releases_view .view_all p a {
+  text-decoration: none;
+  font-style: italic;
+  color: #ec8911;
+}
+
+.content-releases_view .view_all p a:hover {
+  text-decoration: underline;
+}
+.first_content_musics .box_music img,
+.second_content_musics .box_music img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px #06101c;
+}
+.first_content_musics .box_music img:hover,
+.second_content_musics .box_music img:hover {
+  cursor: pointer;
+}
+.first_content_musics .box_music h4,
+.first_content_musics .box_music p,
+.second_content_musics .box_music h4,
+.second_content_musics .box_music p {
+  color: #c9d1de;
+}
+
+/* End Content musics */
+
+/* Content btn all categories */
+.content-btn {
+  padding: 7px 10px;
+}
+
+.content-btn a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 2px;
+  background: #ec8911;
+}
+
+/* End Content btn all categories */
+
+/* Start footer */
+.footer-section .fab-btn {
+  color: #fff;
+  padding: 0 10px;
+}
+/* End footer */
+
+/* Start Master play_section */
+.master_play {
+  background: #06101c;
+  height: 70px;
+  z-index: 10000;
+}
+/* End master play section */
